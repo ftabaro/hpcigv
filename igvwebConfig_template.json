@@ -1,0 +1,16 @@
+{
+
+    "genomes": "resources/genomes.json",
+    "trackRegistryFile": "resources/tracks/trackRegistry.json",
+    "urlShortener": {
+        "provider": "tinyURL"
+    },
+    "igvConfig":
+        {
+            "queryParametersSupported": true,
+            "showChromosomeWidget": true,
+            "genome": "hg19",
+            "showSVGButton": false,
+            "tracks": []
+        }
+}
