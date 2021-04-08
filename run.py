@@ -3,15 +3,6 @@ import os
 import csv
 import argparse
 
-
-# TEMPLATE_PATH = "igvwebConfig_template.json"
-# IGVWEBCONFIG_JS_OUT = "custom/igvwebConfig.js"
-# GENOME="mm10"
-# MAPPING="custom/mapping.txt"
-# DATA_FOLDER="/g/boulard/Francesco/trim66/var/www" # this folder should be mounted in /igv-webapp/dist/data
-# PORT=8898
-
-
 def sort_tracks(tracks_list, mappings):
     tracks_order = [(v[0], v[2]) for v in mappings.values()]
     tracks_order = [x[1] for x in sorted(tracks_order, key=lambda x: int(x[0]))]
